@@ -91,18 +91,18 @@ Partial Class Form1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SetupToolStripMenuItem, Me.MenuItem1})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(123, 48)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(117, 48)
         '
         'SetupToolStripMenuItem
         '
         Me.SetupToolStripMenuItem.Name = "SetupToolStripMenuItem"
-        Me.SetupToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.SetupToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.SetupToolStripMenuItem.Text = "Settings"
         '
         'MenuItem1
         '
         Me.MenuItem1.Name = "MenuItem1"
-        Me.MenuItem1.Size = New System.Drawing.Size(122, 22)
+        Me.MenuItem1.Size = New System.Drawing.Size(116, 22)
         Me.MenuItem1.Text = "Quit"
         '
         'Label1
@@ -492,20 +492,20 @@ Partial Class Form1
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(364, 456)
+        Me.Label21.Location = New System.Drawing.Point(369, 456)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(98, 13)
+        Me.Label21.Size = New System.Drawing.Size(93, 13)
         Me.Label21.TabIndex = 35
-        Me.Label21.Text = "Application change"
+        Me.Label21.Text = "Sensitivity change"
         '
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(380, 490)
+        Me.Label22.Location = New System.Drawing.Point(364, 485)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(82, 13)
+        Me.Label22.Size = New System.Drawing.Size(98, 13)
         Me.Label22.TabIndex = 36
-        Me.Label22.Text = "Operation mode"
+        Me.Label22.Text = "Application change"
         '
         'PictureBox1
         '
