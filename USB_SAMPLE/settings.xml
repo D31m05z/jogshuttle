@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Setting>
+  <!--
+  ＝＝＝＝＝＝＝＝Preferenceの記述＝＝＝＝＝＝＝＝
+  <Preference>ではプログラムの初期設定を記述しています。
+  書き換えることで起動時の動作を変えることができます。
+  
+  MODE_BUTTON:起動時に動作モード変更ボタンに設定されるボタン
+  SENS_BUTTON:起動時に感度変更ボタンに設定されるボタン
+  DEFAULT_MODE:起動時に設定される動作モード
+  MAX_SENSITIVITE:感度変更時の最大値
+  
+  ボタンは0から13の数値で設定。
+  0:CENTER
+  1:PLAY(>||)
+  2:IN
+  3:OUT
+  4:ADD/DIV
+  5:DECK/FILE
+  6:REVERSE(<<)
+  7:FOWARD(>>)
+  8:CAP/UNDO
+  9:ON_DOTS(・)
+  10:TWO_DOTS(・・)
+  11:THREE_DOTS(・・・)
+  12:FOUR_DOTS(・・・・)
+  13:FIVE_DOTS(・・・・・)
+  
+  ボタンを設定しない場合は14にしてください。
+  
+  モードの設定は下に記述する<AppData>登録順に対応します。
+  <AppData>にID属性値がありますが、今のところプログラム動作には一切関与していません。
+  -->
+  
+  <Preference>
+    <MODE_BUTTON>13</MODE_BUTTON>
+    <SENS_BUTTON>0</SENS_BUTTON>
+    <DEFAULT_MODE>0</DEFAULT_MODE>
+    <MAX_SENSITIVITE>6</MAX_SENSITIVITE>
+  </Preference>
+
+
+  <!--
+  ＝＝＝＝＝＝＝＝AppDataの記述＝＝＝＝＝＝＝＝
+  <AppData>を追記することで任意動作モードを作成できます
+  
+  NAME:動作モード名に表示される名称
+  CLASSIFICATION:分類(※現状では未使用)
+  BUTTONS:ボタンの設定
+  
+      CLOCK (ダイヤル時計回り)
+      COUNTER_CLOCK (ダイヤル反時計回り)
+      CENTER (ダイヤル中央ボタン)
+      PLAY (>||)
+      IN
+      OUT
+      ADD/DIV
+      DECK/FILE
+      REVERSE (<<)
+      FOWARD (>>)
+      CAP/UNDO
+      ON_DOTS (・)
+      TWO_DOTS (・・)
+      THREE_DOTS (・・・)
+      FOUR_DOTS (・・・・)
+      FIVE_DOTS (・・・・・)
+  
+  ボタンを押した瞬間またはダイヤルを1クリック回転させるとプログラムから
+  SendKeysメソッドを利用して設定したキーのキーストロークが送信されます。
+  SendKeysメソッドを用いて送信できるキーストロークについては...
+  http://msdn.microsoft.com/ja-jp/library/cc364423.aspx
+  を参照してください。
+  
+  例外として、スペースキーは{SPACE}コードを使用してください。
+  -->
+  
+  <AppData ID="0">
+    <NAME>Firefox</NAME>
+    <CLASSIFICATION>Web Browser</CLASSIFICATION>
+    <BUTTONS>
+      <CLOCK>{DOWN}</CLOCK>
+      <COUNTER_CLOCK>{UP}</COUNTER_CLOCK>
+      <CENTER></CENTER>
+      <PLAY>{F5}</PLAY>
+      <IN>^{PGUP}</IN>
+      <OUT>^{PGDN}</OUT>
+      <ADD>^{F4}</ADD>
+      <DECK>{TAB}</DECK>
+      <REVERSE>{BS}</REVERSE>
+      <FOWARD>+{BS}</FOWARD>
+      <CAP>%{HOME}</CAP>
+      <ONE_DOTS></ONE_DOTS>
+      <TWO_DOTS></TWO_DOTS>
+      <THREE_DOTS></THREE_DOTS>
+      <FOUR_DOTS></FOUR_DOTS>
+      <FIVE_DOTS></FIVE_DOTS>
+    </BUTTONS>
+  </AppData>
+
+  <AppData ID="1">
+    <NAME>Internet Explorer</NAME>
+    <CLASSIFICATION>Web Browser</CLASSIFICATION>
+    <BUTTONS>
+      <CLOCK>{DOWN}</CLOCK>
+      <COUNTER_CLOCK>{UP}</COUNTER_CLOCK>
+      <CENTER></CENTER>
+      <PLAY>{F5}</PLAY>
+      <IN>+{TAB}</IN>
+      <OUT>^{TAB}</OUT>
+      <ADD>^{F4}</ADD>
+      <DECK>{TAB}</DECK>
+      <REVERSE>{BS}</REVERSE>
+      <FOWARD>%{RIGHT}</FOWARD>
+      <CAP>%{HOME}</CAP>
+      <ONE_DOTS></ONE_DOTS>
+      <TWO_DOTS></TWO_DOTS>
+      <THREE_DOTS></THREE_DOTS>
+      <FOUR_DOTS></FOUR_DOTS>
+      <FIVE_DOTS></FIVE_DOTS>
+    </BUTTONS>
+  </AppData>
+
+  <AppData ID="2">
+    <NAME>EDIUS</NAME>
+    <CLASSIFICATION>Video Edit</CLASSIFICATION>
+    <BUTTONS>
+      <CLOCK>{RIGHT}</CLOCK>
+      <COUNTER_CLOCK>{LEFT}</COUNTER_CLOCK>
+      <CENTER></CENTER>
+      <PLAY>{SPACE}</PLAY>
+      <IN>i</IN>
+      <OUT>o</OUT>
+      <ADD>c</ADD>
+      <DECK></DECK>
+      <REVERSE>j</REVERSE>
+      <FOWARD>l</FOWARD>
+      <CAP>z</CAP>
+      <ONE_DOTS></ONE_DOTS>
+      <TWO_DOTS></TWO_DOTS>
+      <THREE_DOTS></THREE_DOTS>
+      <FOUR_DOTS></FOUR_DOTS>
+      <FIVE_DOTS></FIVE_DOTS>
+    </BUTTONS>
+  </AppData>
+
+  <AppData ID="3">
+    <NAME>Premiere Elements</NAME>
+    <CLASSIFICATION>Video Edit</CLASSIFICATION>
+    <BUTTONS>
+      <CLOCK>{RIGHT}</CLOCK>
+      <COUNTER_CLOCK>{LEFT}</COUNTER_CLOCK>
+      <CENTER></CENTER>
+      <PLAY>{SPACE}</PLAY>
+      <IN>i</IN>
+      <OUT>o</OUT>
+      <ADD>^k</ADD>
+      <DECK></DECK>
+      <REVERSE>j</REVERSE>
+      <FOWARD>l</FOWARD>
+      <CAP>z</CAP>
+      <ONE_DOTS></ONE_DOTS>
+      <TWO_DOTS></TWO_DOTS>
+      <THREE_DOTS></THREE_DOTS>
+      <FOUR_DOTS></FOUR_DOTS>
+      <FIVE_DOTS></FIVE_DOTS>
+    </BUTTONS>
+  </AppData>
+  
+  <AppData ID="4">
+    <NAME>MPCHC</NAME>
+    <CLASSIFICATION>MediaPlayer</CLASSIFICATION>
+    <BUTTONS>
+      <CLOCK>{UP}</CLOCK>
+      <COUNTER_CLOCK>{DOWN}</COUNTER_CLOCK>
+      <CENTER></CENTER>
+      <PLAY>{SPACE}</PLAY>
+      <IN>{PGDN}</IN>
+      <OUT>{PGUP}</OUT>
+      <ADD>.</ADD>
+      <DECK></DECK>
+      <REVERSE>^{DOWN}</REVERSE>
+      <FOWARD>^{UP}</FOWARD>
+      <CAP>^~</CAP>
+      <ONE_DOTS></ONE_DOTS>
+      <TWO_DOTS></TWO_DOTS>
+      <THREE_DOTS></THREE_DOTS>
+      <FOUR_DOTS></FOUR_DOTS>
+      <FIVE_DOTS></FIVE_DOTS>
+    </BUTTONS>
+  </AppData>
+
+</Setting>
