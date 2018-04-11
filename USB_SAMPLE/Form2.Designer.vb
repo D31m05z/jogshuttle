@@ -34,17 +34,17 @@ Partial Class Form2
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(267, 38)
+        Me.Label1.Location = New System.Drawing.Point(267, 41)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 12)
+        Me.Label1.Size = New System.Drawing.Size(60, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Version 4.0"
+        Me.Label1.Text = "Version 5.0"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label2.Location = New System.Drawing.Point(73, 12)
+        Me.Label2.Location = New System.Drawing.Point(73, 13)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(256, 16)
         Me.Label2.TabIndex = 3
@@ -53,9 +53,9 @@ Partial Class Form2
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.JogShuttle_Controller.My.Resources.Resources.JD1_IMAGEs
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 13)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(55, 65)
+        Me.PictureBox1.Size = New System.Drawing.Size(55, 70)
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
@@ -63,25 +63,25 @@ Partial Class Form2
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label3.Location = New System.Drawing.Point(74, 34)
+        Me.Label3.Location = New System.Drawing.Point(74, 37)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(153, 16)
+        Me.Label3.Size = New System.Drawing.Size(162, 16)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "仮想キーボードドライバ"
+        Me.Label3.Text = "Virtual keyboard driver"
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(186, 65)
+        Me.LinkLabel1.Location = New System.Drawing.Point(186, 70)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(0, 12)
+        Me.LinkLabel1.Size = New System.Drawing.Size(0, 13)
         Me.LinkLabel1.TabIndex = 7
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(337, 95)
+        Me.ClientSize = New System.Drawing.Size(337, 103)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox1)
@@ -92,7 +92,7 @@ Partial Class Form2
         Me.MinimizeBox = False
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "バージョン情報"
+        Me.Text = "Version information"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
