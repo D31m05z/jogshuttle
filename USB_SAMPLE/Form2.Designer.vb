@@ -72,7 +72,7 @@ Partial Class Form2
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(186, 70)
+        Me.LinkLabel1.Location = New System.Drawing.Point(100, 70)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(0, 13)
         Me.LinkLabel1.TabIndex = 7
