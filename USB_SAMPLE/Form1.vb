@@ -320,7 +320,7 @@ Public Class Form1
         Next
 
         ''“®ìƒ‚[ƒhØ‚è‘Ö‚¦ƒŠƒXƒg
-        ComboBox3.Items().Add("ƒ_ƒCƒ„ƒ‹ƒ{ƒ^ƒ“")
+        ComboBox3.Items().Add("ƒ_ƒCƒ")
         ComboBox3.Items().Add(">||")
         ComboBox3.Items().Add("IN")
         ComboBox3.Items().Add("OUT")
@@ -336,9 +336,9 @@ Public Class Form1
         ComboBox3.Items().Add("EEEEE")
         ComboBox3.Items().Add("‚È‚µ")
 
-        ''Š´“xØ‚è‘Ö‚¦ƒŠƒXƒg
-        ComboBox4.Items().Add("ƒ_ƒCƒ„ƒ‹ƒ{ƒ^ƒ“")
-        ComboBox4.Items().Add(">||")
+        ''Š´“xØ‚è'Ö‚¦ƒŠƒXƒg
+        ComboBox4.Items().Add("ƒ_ƒCƒ")
+        ComboBox4.Items().Add(" >||")
         ComboBox4.Items().Add("IN")
         ComboBox4.Items().Add("OUT")
         ComboBox4.Items().Add("ADD/DIV")
@@ -391,7 +391,7 @@ Public Class Form1
     End Sub
 
     Private Sub MenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuItem1.Click
-        NotifyIcon1.Visible = False ' ƒAƒCƒRƒ“‚ğƒgƒŒƒC‚©‚çæ‚èœ‚­
+        NotifyIcon1.Visible = False ' ƒAƒCƒRƒ“
         Application.Exit() ' ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌI—¹
     End Sub
 
